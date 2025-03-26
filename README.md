@@ -1,3 +1,10 @@
+<!-- badges: start -->
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-archived-orange.svg)](https://www.tidyverse.org/lifecycle/#archived)
+
+<!-- badges: end -->
+
+
 # Ice Age Mapper
 An interactive geovisualization application for communicating climate-driven paleoecological change since the last glacial maximum for both students and researchers.
 
