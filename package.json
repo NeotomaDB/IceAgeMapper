@@ -1,0 +1,49 @@
+{
+  "name": "iceagemapper",
+  "version": "1.0.0",
+  "description": "Geovisualization application for data in the Neotoma Paleoecological Database, designed for hypothesis generation and exporation.   Developed at University of Wisconsin, Madison Geography.",
+  "main": "js/modules/static/bundle.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottsfarley93/IceAgeMapper.git"
+  },
+  "dependencies": {
+    "awesomplete": "latest",
+    "bootstrap": "~3.4",
+    "crossfilter": "latest",
+    "d3": "~3",
+    "d3-queue": "latest",
+    "dc": "latest",
+    "intro": "^1.0.0",
+    "intro.js": "^2.5.0",
+    "jquery": "3",
+    "jquery-layout": "latest",
+    "jquery-ui": "latest",
+    "jquery-ui-bundle": "latest",
+    "mapbox-gl": "latest",
+    "pace": "latest",
+    "toastr": "latest",
+    "underscore": "latest"
+  },
+  "author": "Scott Farley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottsfarley93/IceAgeMapper/issues"
+  },
+  "homepage": "https://github.com/scottsfarley93/IceAgeMapper#readme",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "browserify-shim": "^3.8.13",
+    "grunt-browserify": "^5.0.0",
+    "grunt-karma": "^2.0.0",
+    "karma-bro": "^0.11.1",
+    "karma-html-reporter": "^0.2.7",
+    "karma-phantomjs-launcher": "^1.0.2"
+  }
+}
