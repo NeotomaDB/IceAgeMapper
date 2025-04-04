@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-md-3">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input class='form-control' ng-model="$ctrl.query">
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp" class='form-control'>
+          <option value="title">Title</option>
+          <option value="dateOrder">Newest</option>
+          <option value='organization'>
+            Organization
+          </option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-xs-8 col-md-9">
+      <!--Body content-->
+      <a href={{item.link}} ng-repeat="item in $ctrl.items | filter:$ctrl.query | orderBy:$ctrl.orderProp ">
+        <div class='col-xs-12 col-sm-6 col-md-4 col-lg-4 gallery-item' >
+        <h5>{{item.title}}</h5>
+        <p class='text-muted'>
+          {{item.author}}
+        </p>
+        <p>
+          <strong>{{item.organization}} </strong>
+        </p>
+        <p>
+          {{item.description}}
+        </p>
+        <i>
+          {{item.dateFormat}}
+        </i>
+      </div>
+      </a>
+
+      <!-- <ul class="phones list-group">
+        <li class='phone-list-item' ng-repeat="item in $ctrl.items | filter:$ctrl.query | orderBy:$ctrl.orderProp ">
+          <span>{{item.title}}</span>
+          <p>{{item.description}}</p>
+        </li>
+      </ul> -->
+
+    </div>
+  </div>
+</div>

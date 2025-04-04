@@ -1,0 +1,70 @@
+<!-- this is an experiment with Angular. I like the templating, and it is helpful for this page. I do not think it is appropriate to change the main IAM to angular at this time, however.!-->
+<html ng-app="galleryApp">
+<head>
+  <title>Ice Age Mapper</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" >
+  <style>
+
+  body{
+    background-color: rgba(0, 175, 195, 1);
+  }
+  .gallery-item{
+    height: 20%;
+    border: thin solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#d4d9db;
+    margin: 10px;
+  }
+
+  .gallery-item:hover{
+    background-color: #ffc100;
+    cursor:pointer;
+    color: black;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid nav-container">
+      <div class="navbar-header col-xs-8">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <h3 class='iam-header' id='iam-header'>Ice Age <strong><i>Mapper</i></strong> <span class='text-muted'><small>v2.0</small></span></h3>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id='dropdown-menu' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <h4>Menu <span class='caret'></span></h4>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="iam.html">Home</a>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- <li><a href="#">Tutorial</a></li> -->
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="taxonomy.html">Interactive Taxonomy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <h1 class='page-header'>Map Gallery</h1>
+
+  <gallery-list></gallery-list>
+
+  <script src="bower_components/jquery/dist/jquery.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular.mocks.js"></script>
+  <script src="js/gallery/galleryList/galleryList.module.js"></script>
+  <script src="js/gallery/galleryList/galleryList.component.js"></script>
+  <script src="js/gallery/gallery.js"></script>
+</body>
+</html>
